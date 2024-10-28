@@ -11,8 +11,7 @@ import ROG_URL from './ROG_URL.json';
 
 // Enter your storage account name and shared key
 const account = 'nestlottiespace';
-const accountKey =
-  'dHnUaPiS4Jc5d25pC2aWwYa14pYa/s+qXjywSNXKeMeNpJgzJCSqgXnchoXiRRh6luGI7jEzXYxF+AStC941NA==';
+const accountKey = process.env.AZURE_BLOB_KEY
 
 // Use StorageSharedKeyCredential with storage account and account key
 // StorageSharedKeyCredential is only available in Node.js runtime, not in browsers
